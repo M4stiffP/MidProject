@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@100;200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rancho&display=swap');
+* {
+  font-family: "IBM Plex Sans Thai", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: 700;
+  color: #92400e; /* amber-800 */
+  text-shadow: 0 2px 4px rgba(146, 64, 14, 0.1);
+}
+
+/* Modern cream theme styles */
+body {
+  background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 25%, #fed7aa 50%, #fdba74 75%, #fb923c 100%);
+}
+
+/* Mobile menu styles */
+#mobile-menu {
+  backdrop-filter: blur(20px);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#mobile-menu.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0.95);
+}
+
+#mobile-menu:not(.hidden) {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}
+
+#menu-icon {
+  color: #57534e; /* stone-700 */
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 1000;
+  transition: all 0.3s ease;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+#menu-icon:hover {
+  transform: scale(1.1);
+  background: rgba(245, 158, 11, 0.1);
+  color: #d97706; /* amber-600 */
+}
+
+#close-menu {
+  transition: all 0.3s ease;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+#close-menu:hover {
+  transform: scale(1.1) rotate(90deg);
+  background: rgba(245, 158, 11, 0.1);
+}
+
+#card-container {
+  width: 60vw;
+  height: 60vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -30vh 0 0 -30vw;
+}
+
+#card {
+  animation: backAn 60s infinite;
+  color: #1c1917; /* stone-900 */
+  padding: 2.5em 2em;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  background: linear-gradient(120deg, rgba(255, 255, 255, 0.685) 60%, rgba(245, 158, 11, 0.08) 100%), url(https://lh3.googleusercontent.com/pw/AP1GczMD4qHCmuhSKfs0t-8xyjTsSbBOaoeSEJNfDG4UXVchndVoAOxkSBVJzI90QiLK8FxIt89TB8YYjyM_kuJh7nZtGdYA3whHf25QbBAv5d48Acipx7aqXoChMFJBgKX33icFrWT4_pUW7Ow2PAUOn6Xvxg=w1692-h954-s-no-gm?authuser=0) center/cover no-repeat;
+  box-shadow: 0 25px 50px rgba(146, 64, 14, 0.15), 0 8px 25px rgba(245, 158, 11, 0.1);
+  border-radius: 2em;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(245, 158, 11, 0.2);
+  overflow: hidden;
+}
+
+#card .text-block {
+  font-family: 'Poppins', 'Rancho', cursive;
+  font-size: 2.5em;
+  margin: 0 0 0.5em 0;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3), 0 1px 3px rgba(255, 255, 255, 0.8);
+  color: #1c1917;
+}
+
+
+
+#card-container .pg {
+  position: absolute;
+  height: auto;
+  width: 40%;
+  right: -90px;
+  bottom: 20px;
+  z-index: 2;
+  max-width: 75%;
+  max-height: 60vh;
+  height: auto;
+  object-fit: contain;
+  margin-right: 0px;
+  transform: scale(1.6);
+}
+
+#card .font-bold {
+  font-size: 1.3em;
+  text-shadow: 0 1px 4px rgba(67, 233, 123, 0.18);
+}
+
+#card p {
+  font-size: 1em;
+  line-height: 1.7;
+}
+
+.features {
+  display: flex;
+  gap: 0.8em;
+  flex-wrap: wrap;
+  margin: 1em 0;
+}
+
+.feature-tag {
+  background: rgba(67, 233, 123, 0.2);
+  color: #43e97b;
+  padding: 0.4em 0.8em;
+  border-radius: 1em;
+  font-size: 0.9em;
+  font-weight: 500;
+  border: 1px solid rgba(67, 233, 123, 0.3);
+  backdrop-filter: blur(4px);
+  font-family: 'Poppins', sans-serif;
+}
+
+.price-section {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  margin: 1.5em 0;
+}
+
+.original-price {
+  font-size: 1.1em;
+  color: #78716c; /* stone-500 */
+  text-decoration: line-through;
+  font-family: 'Poppins', sans-serif;
+}
+
+.sale-price {
+  font-size: 1.8em;
+  color: #d97706; /* amber-600 */
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  text-shadow: 0 2px 8px rgba(217, 119, 6, 0.3);
+}
+
+.discount-badge {
+  background: linear-gradient(45deg, #ea580c, #f97316); /* orange gradients */
+  color: white;
+  padding: 0.3em 0.8em;
+  border-radius: 1em;
+  font-size: 0.8em;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0 4px 12px rgba(234, 88, 12, 0.3);
+}
+
+.btn-shopnow {
+  font-size: 1.2rem;
+  padding: 1em 2.5em;
+  z-index: 2;
+  position: relative;
+  background: linear-gradient(90deg, #f59e0b 0%, #f97316 50%, #ea580c 100%);
+  box-shadow: 0 8px 24px rgba(245, 158, 11, 0.25), 0 4px 12px rgba(249, 115, 22, 0.2);
+  border: none;
+  outline: none;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 1.5em;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  font-family: 'Poppins', 'Rancho', cursive;
+  font-weight: 600;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(245, 158, 11, 0.3);
+}
+
+.btn-shopnow:hover {
+  transform: translateY(-6px) scale(1.05);
+  box-shadow: 0 15px 35px rgba(245, 158, 11, 0.4), 0 5px 15px rgba(249, 115, 22, 0.3);
+  background: linear-gradient(90deg, #ea580c 0%, #f97316 50%, #f59e0b 100%);
+}
+
+
+
+.shine {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(120deg, rgba(255, 255, 255, 0.03) 0%, rgba(245, 158, 11, 0.04) 50%, rgba(249, 115, 22, 0.02) 100%);
+  z-index: 1;
+  pointer-events: none;
+  border-radius: 2em;
+}
+
+@keyframes backAn {
+  0% {
+    background-size: 100%;
+  }
+
+  50% {
+    background-size: 200%;
+  }
+
+  100% {
+    background-size: 100%;
+  }
+}
+
+/* Video Container Styles */
+#video-container {
+  transition: all 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  z-index: 10;
+  position: relative;
+}
+
+#video-container video {
+  transition: all 0.3s ease;
+}
+
+/* Video section positioning */
+#video-section {
+  position: relative;
+  z-index: 10;
+}
+
+/* Ensure content appears above video when scrolled */
+body {
+  position: relative;
+}
+
+/* Make sure the card content has higher z-index */
+#card-container {
+  z-index: 60;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}

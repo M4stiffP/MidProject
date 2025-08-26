@@ -21,11 +21,11 @@
 
 <body class="bg-gradient-to-br from-amber-50 via-stone-100 to-orange-50 min-h-screen">
   <header
-    class="container mx-auto flex flex-row justify-between items-center relative z-40 p-4 bg-white/80 backdrop-blur-md rounded-2xl mt-4 shadow-lg border border-stone-200">
-    <a href="#" class="logo text-amber-800">OUTDOOR GEAR</a>
+    class="container mx-auto flex flex-row justify-between items-center relative z-40 p-3 md:p-4 bg-white/80 backdrop-blur-md rounded-2xl mt-2 md:mt-4 shadow-lg border border-stone-200">
+    <a href="#" class="logo text-amber-800 text-xl md:text-2xl lg:text-3xl">OUTDOOR GEAR</a>
 
     <!-- Desktop Menu (visible on large screens) -->
-    <ul class="hidden lg:flex flex-row space-x-12 text-stone-700 text-2xl font-bold">
+    <ul class="hidden lg:flex flex-row space-x-8 xl:space-x-12 text-stone-700 text-xl xl:text-2xl font-bold">
       <li><a href="#"
           class="hover:text-amber-600 transition-colors duration-300 relative after:content-[''] after:absolute after:w-0 after:h-0.5 after:bg-amber-600 after:left-0 after:-bottom-1 after:transition-all after:duration-300 hover:after:w-full">Home</a>
       </li>
@@ -44,27 +44,27 @@
     </ul>
 
     <!-- Mobile Menu Icon (visible on small screens) -->
-    <div class="lg:hidden bx bx-menu text-stone-700 text-3xl cursor-pointer hover:text-amber-600 transition-colors"
+    <div class="lg:hidden bx bx-menu text-stone-700 text-2xl md:text-3xl cursor-pointer hover:text-amber-600 transition-colors"
       id="menu-icon"></div>
 
     <!-- Mobile Menu (hidden by default) -->
     <div
       class="lg:hidden fixed top-0 left-0 w-full h-full bg-gradient-to-br from-stone-100/95 via-amber-50/95 to-orange-50/95 backdrop-blur-lg z-50 hidden"
       id="mobile-menu">
-      <div class="flex flex-col items-center justify-center h-full space-y-8">
+      <div class="flex flex-col items-center justify-center h-full space-y-6 md:space-y-8">
         <div
-          class="absolute top-4 right-4 bx bx-x text-stone-700 text-4xl cursor-pointer hover:text-amber-600 transition-colors"
+          class="absolute top-4 right-4 bx bx-x text-stone-700 text-3xl md:text-4xl cursor-pointer hover:text-amber-600 transition-colors"
           id="close-menu"></div>
         <a href="#"
-          class="text-stone-700 text-3xl font-bold hover:text-amber-600 transition-colors duration-300">Home</a>
+          class="text-stone-700 text-2xl md:text-3xl font-bold hover:text-amber-600 transition-colors duration-300">Home</a>
         <a href="#"
-          class="text-stone-700 text-3xl font-bold hover:text-amber-600 transition-colors duration-300">Shoes</a>
+          class="text-stone-700 text-2xl md:text-3xl font-bold hover:text-amber-600 transition-colors duration-300">Shoes</a>
         <a href="#"
-          class="text-stone-700 text-3xl font-bold hover:text-amber-600 transition-colors duration-300">Clothing</a>
+          class="text-stone-700 text-2xl md:text-3xl font-bold hover:text-amber-600 transition-colors duration-300">Clothing</a>
         <a href="#"
-          class="text-stone-700 text-3xl font-bold hover:text-amber-600 transition-colors duration-300">Gear</a>
+          class="text-stone-700 text-2xl md:text-3xl font-bold hover:text-amber-600 transition-colors duration-300">Gear</a>
         <a href="#"
-          class="text-stone-700 text-3xl font-bold hover:text-amber-600 transition-colors duration-300">About</a>
+          class="text-stone-700 text-2xl md:text-3xl font-bold hover:text-amber-600 transition-colors duration-300">About</a>
       </div>
     </div>
   </header>
@@ -78,33 +78,33 @@
         COLUMBIA CRESTWOOD™ <span style="font-size:0.5em;font-weight:400;">(MID WATERPROOF)</span>
       </div>
       <div class="mt-2 text-lg">
-        <div class="text-stone-800 space-y-6 animate-on-scroll">
-          <h2 class="text-4xl font-bold text-amber-900">Built for Adventure</h2>
-          <p class="text-xl text-stone-900 ">
-            Every step matters when you're exploring the great outdoors.<br>
+        <div class="text-stone-800 space-y-4 md:space-y-6 animate-on-scroll" style="margin-top: 0;">
+          <h2 class="text-2xl md:text-4xl font-bold text-amber-900 mt-0 md:mt-6">Built for Adventure</h2>
+          <p class="text-base md:text-xl text-stone-900">
+            Every step matters when you're exploring the great outdoors.<br class="hidden md:block">
             The Columbia Crestwood Mid Waterproof shoes are engineered to keep you comfortable and confident on any
             terrain.
           </p>
-          <ul class="space-y-4">
-            <li class="flex items-center gap-3 animate-on-scroll">
+          <ul class="space-y-2 md:space-y-4">
+            <li class="flex items-center gap-2 md:gap-3 animate-on-scroll">
               <span
-                class="w-6 h-6 bg-amber-500 rounded-full flex items-center justify-center text-sm text-white">✓</span>
-              <span class="text-stone-700">Omni-Tech™ waterproof breathable construction</span>
+                class="w-5 h-5 md:w-6 md:h-6 bg-amber-500 rounded-full flex items-center justify-center text-xs md:text-sm text-white">✓</span>
+              <span class="text-stone-700 text-sm md:text-base">Omni-Tech™ waterproof breathable construction</span>
             </li>
-            <li class="flex items-center gap-3 animate-on-scroll">
+            <li class="flex items-center gap-2 md:gap-3 animate-on-scroll">
               <span
-                class="w-6 h-6 bg-amber-500 rounded-full flex items-center justify-center text-sm text-white">✓</span>
-              <span class="text-stone-700">Omni-Grip™ non-marking traction rubber</span>
+                class="w-5 h-5 md:w-6 md:h-6 bg-amber-500 rounded-full flex items-center justify-center text-xs md:text-sm text-white">✓</span>
+              <span class="text-stone-700 text-sm md:text-base">Omni-Grip™ non-marking traction rubber</span>
             </li>
-            <li class="flex items-center gap-3 animate-on-scroll">
+            <li class="flex items-center gap-2 md:gap-3 animate-on-scroll">
               <span
-                class="w-6 h-6 bg-amber-500 rounded-full flex items-center justify-center text-sm text-white">✓</span>
-              <span class="text-stone-700">TechLite™ lightweight midsole</span>
+                class="w-5 h-5 md:w-6 md:h-6 bg-amber-500 rounded-full flex items-center justify-center text-xs md:text-sm text-white">✓</span>
+              <span class="text-stone-700 text-sm md:text-base">TechLite™ lightweight midsole</span>
             </li>
-            <li class="flex items-center gap-3 animate-on-scroll">
+            <li class="flex items-center gap-2 md:gap-3 animate-on-scroll">
               <span
-                class="w-6 h-6 bg-amber-500 rounded-full flex items-center justify-center text-sm text-white">✓</span>
-              <span class="text-stone-700">Wide fit for enhanced comfort</span>
+                class="w-5 h-5 md:w-6 md:h-6 bg-amber-500 rounded-full flex items-center justify-center text-xs md:text-sm text-white">✓</span>
+              <span class="text-stone-700 text-sm md:text-base">Wide fit for enhanced comfort</span>
             </li>
           </ul>
         </div>
@@ -131,9 +131,9 @@
       <!-- Video overlay content -->
       <div
         class="absolute inset-0 bg-gradient-to-br from-stone-900/60 via-amber-900/40 to-orange-900/60 flex items-center justify-center">
-        <div class="text-center text-cream-50 px-8">
-          <h2 class="text-5xl font-bold mb-6 text-amber-100">Experience the Adventure</h2>
-          <p class="text-xl mb-8 max-w-2xl mx-auto text-stone-100">
+        <div class="text-center text-cream-50 px-4 md:px-8">
+          <h2 class="text-3xl md:text-5xl font-bold mb-4 md:mb-6 text-amber-100">Experience the Adventure</h2>
+          <p class="text-base md:text-xl mb-6 md:mb-8 max-w-2xl mx-auto text-stone-100">
             Watch how Columbia Crestwood™ performs in real outdoor conditions.
             From mountain trails to river crossings, see why professionals choose Columbia.
           </p>
@@ -143,26 +143,26 @@
   </div>
 
   <!-- Additional content to enable scrolling -->
-  <div class="bg-gradient-to-br from-stone-50 via-amber-25 to-orange-50 text-stone-800 p-8 relative z-30">
-    <div class="container mx-auto">
-      <h2 class="text-4xl font-bold mb-6 text-center text-amber-900">Product Features</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+  <div class="bg-gradient-to-br from-stone-50 via-amber-25 to-orange-50 text-stone-800 p-4 md:p-8 relative z-30">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4 md:mb-6 text-center text-amber-900">Product Features</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8 mb-8 md:mb-12">
         <div
-          class="bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-lg border border-stone-200 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-          <h3 class="text-xl font-bold mb-4 text-amber-800">Waterproof Technology</h3>
-          <p class="text-stone-600">Advanced Omni-Tech™ waterproof breathable construction keeps your feet dry in any
+          class="bg-white/80 backdrop-blur-sm p-4 md:p-6 rounded-2xl shadow-lg border border-stone-200 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+          <h3 class="text-lg md:text-xl font-bold mb-2 md:mb-4 text-amber-800">Waterproof Technology</h3>
+          <p class="text-stone-600 text-sm md:text-base">Advanced Omni-Tech™ waterproof breathable construction keeps your feet dry in any
             weather condition.</p>
         </div>
         <div
-          class="bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-lg border border-stone-200 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-          <h3 class="text-xl font-bold mb-4 text-amber-800">Superior Grip</h3>
-          <p class="text-stone-600">Omni-Grip™ non-marking traction rubber provides exceptional grip on various
+          class="bg-white/80 backdrop-blur-sm p-4 md:p-6 rounded-2xl shadow-lg border border-stone-200 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+          <h3 class="text-lg md:text-xl font-bold mb-2 md:mb-4 text-amber-800">Superior Grip</h3>
+          <p class="text-stone-600 text-sm md:text-base">Omni-Grip™ non-marking traction rubber provides exceptional grip on various
             terrains.</p>
         </div>
         <div
-          class="bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-lg border border-stone-200 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-          <h3 class="text-xl font-bold mb-4 text-amber-800">Comfort Fit</h3>
-          <p class="text-stone-600">TechLite™ lightweight midsole with wide fit design for enhanced comfort during long
+          class="bg-white/80 backdrop-blur-sm p-4 md:p-6 rounded-2xl shadow-lg border border-stone-200 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+          <h3 class="text-lg md:text-xl font-bold mb-2 md:mb-4 text-amber-800">Comfort Fit</h3>
+          <p class="text-stone-600 text-sm md:text-base">TechLite™ lightweight midsole with wide fit design for enhanced comfort during long
             hikes.</p>
         </div>
       </div>
@@ -170,17 +170,17 @@
       <div class="text-center mb-12 mt-2">
         <h2 class="text-3xl font-bold mb-4 text-amber-900">Customer Reviews</h2>
         <p class="text-lg text-stone-600 mb-8">See what our customers say about Columbia Crestwood™</p>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div class="bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-lg border border-stone-200">
-            <p class="text-stone-700 mb-4">"Best hiking shoes I've ever owned. Completely waterproof and incredibly
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
+          <div class="bg-white/80 backdrop-blur-sm p-4 md:p-6 rounded-2xl shadow-lg border border-stone-200">
+            <p class="text-stone-700 mb-4 text-sm md:text-base">"Best hiking shoes I've ever owned. Completely waterproof and incredibly
               comfortable!"</p>
-            <p class="font-bold text-amber-800">- Sarah Johnson</p>
+            <p class="font-bold text-amber-800 text-sm md:text-base">- Sarah Johnson</p>
             <div class="text-amber-500">★★★★★</div>
           </div>
-          <div class="bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-lg border border-stone-200">
-            <p class="text-stone-700 mb-4">"Perfect for wide feet. Great grip on rocky trails and keeps feet dry in
+          <div class="bg-white/80 backdrop-blur-sm p-4 md:p-6 rounded-2xl shadow-lg border border-stone-200">
+            <p class="text-stone-700 mb-4 text-sm md:text-base">"Perfect for wide feet. Great grip on rocky trails and keeps feet dry in
               streams."</p>
-            <p class="font-bold text-amber-800">- Mike Chen</p>
+            <p class="font-bold text-amber-800 text-sm md:text-base">- Mike Chen</p>
             <div class="text-amber-500">★★★★★</div>
           </div>
         </div>
@@ -195,23 +195,28 @@
     const closeMenu = document.getElementById('close-menu');
 
     // Open mobile menu
-    menuIcon.addEventListener('click', function () {
+    menuIcon.addEventListener('click', function (e) {
+      e.preventDefault();
+      e.stopPropagation();
       mobileMenu.classList.remove('hidden');
-      document.body.style.overflow = 'hidden'; // Prevent scrolling when menu is open
+      document.body.classList.add('menu-open');
     });
 
     // Close mobile menu
-    closeMenu.addEventListener('click', function () {
+    closeMenu.addEventListener('click', function (e) {
+      e.preventDefault();
+      e.stopPropagation();
       mobileMenu.classList.add('hidden');
-      document.body.style.overflow = 'auto'; // Re-enable scrolling
+      document.body.classList.remove('menu-open');
     });
 
     // Close menu when clicking on menu links
     const mobileMenuLinks = mobileMenu.querySelectorAll('a');
     mobileMenuLinks.forEach(link => {
-      link.addEventListener('click', function () {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
         mobileMenu.classList.add('hidden');
-        document.body.style.overflow = 'auto';
+        document.body.classList.remove('menu-open');
       });
     });
 
@@ -219,7 +224,7 @@
     mobileMenu.addEventListener('click', function (e) {
       if (e.target === mobileMenu) {
         mobileMenu.classList.add('hidden');
-        document.body.style.overflow = 'auto';
+        document.body.classList.remove('menu-open');
       }
     });
 

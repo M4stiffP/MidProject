@@ -9,6 +9,8 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- Custom CSS link -->
   <link rel="stylesheet" href="src/style.css" />
+  <!-- Main TypeScript file -->
+  <script type="module" src="src/main.ts"></script>
 
   <!-- Box Icon link -->
   <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
@@ -32,6 +34,10 @@
       <li><a href="#"
           class="hover:text-amber-600 transition-colors duration-300 relative after:content-[''] after:absolute after:w-0 after:h-0.5 after:bg-amber-600 after:left-0 after:-bottom-1 after:transition-all after:duration-300 hover:after:w-full">Shoes</a>
       </li>
+      <li><a href="#why-choose-us"
+          class="hover:text-amber-600 transition-colors duration-300 relative after:content-[''] after:absolute after:w-0 after:h-0.5 after:bg-amber-600 after:left-0 after:-bottom-1 after:transition-all after:duration-300 hover:after:w-full">Why
+          Us</a>
+      </li>
       <li><a href="#"
           class="hover:text-amber-600 transition-colors duration-300 relative after:content-[''] after:absolute after:w-0 after:h-0.5 after:bg-amber-600 after:left-0 after:-bottom-1 after:transition-all after:duration-300 hover:after:w-full">Clothing</a>
       </li>
@@ -44,7 +50,8 @@
     </ul>
 
     <!-- Mobile Menu Icon (visible on small screens) -->
-    <div class="lg:hidden bx bx-menu text-stone-700 text-2xl md:text-3xl cursor-pointer hover:text-amber-600 transition-colors"
+    <div
+      class="lg:hidden bx bx-menu text-stone-700 text-2xl md:text-3xl cursor-pointer hover:text-amber-600 transition-colors"
       id="menu-icon"></div>
 
     <!-- Mobile Menu (hidden by default) -->
@@ -59,6 +66,9 @@
           class="text-stone-700 text-2xl md:text-3xl font-bold hover:text-amber-600 transition-colors duration-300">Home</a>
         <a href="#"
           class="text-stone-700 text-2xl md:text-3xl font-bold hover:text-amber-600 transition-colors duration-300">Shoes</a>
+        <a href="#why-choose-us"
+          class="text-stone-700 text-2xl md:text-3xl font-bold hover:text-amber-600 transition-colors duration-300">Why
+          Us</a>
         <a href="#"
           class="text-stone-700 text-2xl md:text-3xl font-bold hover:text-amber-600 transition-colors duration-300">Clothing</a>
         <a href="#"
@@ -143,25 +153,29 @@
   </div>
 
   <!-- Additional content to enable scrolling -->
-  <div class="bg-gradient-to-br from-stone-50 via-amber-25 to-orange-50 text-stone-800 p-4 lg:mt-12 md:p-8 mt-80 relative z-30">
+  <div
+    class="bg-gradient-to-br from-stone-50 via-amber-25 to-orange-50 text-stone-800 p-4 lg:mt-12 md:p-8 mt-80 relative z-30">
     <div class="container mx-auto px-4">
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8 mb-8 md:mb-12">
         <div
           class="bg-white/80 backdrop-blur-sm p-4 md:p-6 rounded-2xl shadow-lg border border-stone-200 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
           <h3 class="text-lg md:text-xl font-bold mb-2 md:mb-4 text-amber-800">Waterproof Technology</h3>
-          <p class="text-stone-600 text-sm md:text-base">Advanced Omni-Tech™ waterproof breathable construction keeps your feet dry in any
+          <p class="text-stone-600 text-sm md:text-base">Advanced Omni-Tech™ waterproof breathable construction keeps
+            your feet dry in any
             weather condition.</p>
         </div>
         <div
           class="bg-white/80 backdrop-blur-sm p-4 md:p-6 rounded-2xl shadow-lg border border-stone-200 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
           <h3 class="text-lg md:text-xl font-bold mb-2 md:mb-4 text-amber-800">Superior Grip</h3>
-          <p class="text-stone-600 text-sm md:text-base">Omni-Grip™ non-marking traction rubber provides exceptional grip on various
+          <p class="text-stone-600 text-sm md:text-base">Omni-Grip™ non-marking traction rubber provides exceptional
+            grip on various
             terrains.</p>
         </div>
         <div
           class="bg-white/80 backdrop-blur-sm p-4 md:p-6 rounded-2xl shadow-lg border border-stone-200 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
           <h3 class="text-lg md:text-xl font-bold mb-2 md:mb-4 text-amber-800">Comfort Fit</h3>
-          <p class="text-stone-600 text-sm md:text-base">TechLite™ lightweight midsole with wide fit design for enhanced comfort during long
+          <p class="text-stone-600 text-sm md:text-base">TechLite™ lightweight midsole with wide fit design for enhanced
+            comfort during long
             hikes.</p>
         </div>
       </div>
@@ -171,13 +185,15 @@
         <p class="text-lg text-stone-600 mb-8">See what our customers say about Columbia Crestwood™</p>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
           <div class="bg-white/80 backdrop-blur-sm p-4 md:p-6 rounded-2xl shadow-lg border border-stone-200">
-            <p class="text-stone-700 mb-4 text-sm md:text-base">"Best hiking shoes I've ever owned. Completely waterproof and incredibly
+            <p class="text-stone-700 mb-4 text-sm md:text-base">"Best hiking shoes I've ever owned. Completely
+              waterproof and incredibly
               comfortable!"</p>
             <p class="font-bold text-amber-800 text-sm md:text-base">- Sarah Johnson</p>
             <div class="text-amber-500">★★★★★</div>
           </div>
           <div class="bg-white/80 backdrop-blur-sm p-4 md:p-6 rounded-2xl shadow-lg border border-stone-200">
-            <p class="text-stone-700 mb-4 text-sm md:text-base">"Perfect for wide feet. Great grip on rocky trails and keeps feet dry in
+            <p class="text-stone-700 mb-4 text-sm md:text-base">"Perfect for wide feet. Great grip on rocky trails and
+              keeps feet dry in
               streams."</p>
             <p class="font-bold text-amber-800 text-sm md:text-base">- Mike Chen</p>
             <div class="text-amber-500">★★★★★</div>
@@ -187,113 +203,521 @@
     </div>
   </div>
 
-  <script>
-    // Mobile menu functionality
-    const menuIcon = document.getElementById('menu-icon');
-    const mobileMenu = document.getElementById('mobile-menu');
-    const closeMenu = document.getElementById('close-menu');
+  <section id="shop" class="py-20 bg-gradient-to-br from-stone-50 via-amber-25 to-orange-50">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-bold mb-6 text-amber-900">Featured Shoes</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          Discover our premium collection of outdoor footwear designed for every adventure
+        </p>
+      </div>
 
-    // Open mobile menu
-    menuIcon.addEventListener('click', function (e) {
-      e.preventDefault();
-      e.stopPropagation();
-      mobileMenu.classList.remove('hidden');
-      document.body.classList.add('menu-open');
-    });
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
+        <!-- HOKA Bondi 8 Black -->
+        <div class="container_shop">
+          <div class="card_shop" data-shoe="bondi8-black">
+            <div class="imgBx">
+              <img src="src/image/shoe/HK_Bondi8_Black.png" alt="HOKA Bondi 8 Black">
+            </div>
+            <div class="contentBx">
+              <h2>HOKA Bondi 8</h2>
+              <div class="price-display">
+                <span class="current-price">$6,490</span>
+                <span class="original-price">$7,490</span>
+              </div>
+              <div class="size">
+                <h3>Size :</h3>
+                <span data-size="39">39</span>
+                <span data-size="40">40</span>
+                <span data-size="41">41</span>
+                <span data-size="42">42</span>
+                <span data-size="43">43</span>
+              </div>
+              <div class="color">
+                <h3>Color :</h3>
+                <span data-color="black" style="background: #000000" title="Black"></span>
+                <span data-color="cream" style="background: #f5f5dc" title="Cream"></span>
+                <span data-color="cyan" style="background: #00ffff" title="Cyan"></span>
+              </div>
+              <a href="#" class="add-to-cart-btn" data-shoe="bondi8" data-price="6490">Add to Cart</a>
+            </div>
+          </div>
+        </div>
 
-    // Close mobile menu
-    closeMenu.addEventListener('click', function (e) {
-      e.preventDefault();
-      e.stopPropagation();
-      mobileMenu.classList.add('hidden');
-      document.body.classList.remove('menu-open');
-    });
+        <!-- HOKA Bondi 8 Cream -->
+        <div class="container_shop">
+          <div class="card_shop" data-shoe="bondi8-cream">
+            <div class="imgBx">
+              <img src="src/image/shoe/HK_Bondi8_Cream.png" alt="HOKA Bondi 8 Cream">
+            </div>
+            <div class="contentBx">
+              <h2>HOKA Bondi 8</h2>
+              <div class="price-display">
+                <span class="current-price">$6,490</span>
+                <span class="original-price">$7,490</span>
+              </div>
+              <div class="size">
+                <h3>Size :</h3>
+                <span data-size="39">39</span>
+                <span data-size="40">40</span>
+                <span data-size="41">41</span>
+                <span data-size="42">42</span>
+                <span data-size="43">43</span>
+              </div>
+              <div class="color">
+                <h3>Color :</h3>
+                <span data-color="black" style="background: #000000" title="Black"></span>
+                <span data-color="cream" style="background: #f5f5dc" title="Cream"></span>
+                <span data-color="cyan" style="background: #00ffff" title="Cyan"></span>
+              </div>
+              <a href="#" class="add-to-cart-btn" data-shoe="bondi8" data-price="6490">Add to Cart</a>
+            </div>
+          </div>
+        </div>
 
-    // Close menu when clicking on menu links
-    const mobileMenuLinks = mobileMenu.querySelectorAll('a');
-    mobileMenuLinks.forEach(link => {
-      link.addEventListener('click', function (e) {
-        e.preventDefault();
-        mobileMenu.classList.add('hidden');
-        document.body.classList.remove('menu-open');
-      });
-    });
+        <!-- HOKA Bondi 8 Cyan -->
+        <div class="container_shop">
+          <div class="card_shop" data-shoe="bondi8-cyan">
+            <div class="imgBx">
+              <img src="src/image/shoe/HK_Bondi8_Cyan.png" alt="HOKA Bondi 8 Cyan">
+            </div>
+            <div class="contentBx">
+              <h2>HOKA Bondi 8</h2>
+              <div class="price-display">
+                <span class="current-price">$6,490</span>
+                <span class="original-price">$7,490</span>
+              </div>
+              <div class="size">
+                <h3>Size :</h3>
+                <span data-size="39">39</span>
+                <span data-size="40">40</span>
+                <span data-size="41">41</span>
+                <span data-size="42">42</span>
+                <span data-size="43">43</span>
+              </div>
+              <div class="color">
+                <h3>Color :</h3>
+                <span data-color="black" style="background: #000000" title="Black"></span>
+                <span data-color="cream" style="background: #f5f5dc" title="Cream"></span>
+                <span data-color="cyan" style="background: #00ffff" title="Cyan"></span>
+              </div>
+              <a href="#" class="add-to-cart-btn" data-shoe="bondi8" data-price="6490">Add to Cart</a>
+            </div>
+          </div>
+        </div>
 
-    // Close menu when clicking outside
-    mobileMenu.addEventListener('click', function (e) {
-      if (e.target === mobileMenu) {
-        mobileMenu.classList.add('hidden');
-        document.body.classList.remove('menu-open');
-      }
-    });
+        <!-- Columbia Featured -->
+        <div class="container_shop">
+          <div class="card_shop columbia-card" data-shoe="columbia">
+            <div class="imgBx">
+              <img src="src/image/shoe/COLUMBIA.png" alt="Columbia Crestwood">
+            </div>
+            <div class="contentBx">
+              <h2>Columbia Crestwood</h2>
+              <div class="price-display">
+                <span class="current-price">$149.90</span>
+                <span class="original-price">$199.90</span>
+              </div>
+              <div class="size">
+                <h3>Size :</h3>
+                <span data-size="39">39</span>
+                <span data-size="40">40</span>
+                <span data-size="41">41</span>
+                <span data-size="42">42</span>
+                <span data-size="43">43</span>
+              </div>
+              <div class="color">
+                <h3>Color :</h3>
+                <span data-color="brown" style="background: #8B4513" title="Brown"></span>
+                <span data-color="black" style="background: #000000" title="Black"></span>
+                <span data-color="grey" style="background: #808080" title="Grey"></span>
+              </div>
+              <a href="#" class="add-to-cart-btn" data-shoe="columbia" data-price="149.90">Add to Cart</a>
+            </div>
+          </div>
+        </div>
 
-    // Video scroll functionality
-    window.addEventListener('scroll', function () {
-      const videoContainer = document.getElementById('video-container');
-      const videoSection = document.getElementById('video-section');
-      const scrollY = window.scrollY;
-      const windowHeight = window.innerHeight;
+        <!-- Mountain Promo Special -->
+        <div class="container_shop">
+          <div class="card_shop mountain-card" data-shoe="mountain-special">
+            <div class="imgBx">
+              <img src="src/image/shoe/Mountainpromo.png" alt="Mountain Special">
+            </div>
+            <div class="contentBx">
+              <h2>Mountain Special</h2>
+              <div class="price-display">
+                <span class="current-price">$99.90</span>
+                <span class="original-price">$159.90</span>
+              </div>
+              <div class="size">
+                <h3>Size :</h3>
+                <span data-size="39">39</span>
+                <span data-size="40">40</span>
+                <span data-size="41">41</span>
+                <span data-size="42">42</span>
+                <span data-size="43">43</span>
+              </div>
+              <div class="color">
+                <h3>Color :</h3>
+                <span data-color="forest" style="background: #228B22" title="Forest Green"></span>
+                <span data-color="brown" style="background: #8B4513" title="Brown"></span>
+                <span data-color="black" style="background: #000000" title="Black"></span>
+              </div>
+              <a href="#" class="add-to-cart-btn" data-shoe="mountain-special" data-price="99.90">Add to Cart</a>
+            </div>
+          </div>
+        </div>
 
-      // Get video section position
-      const videoSectionTop = videoSection.offsetTop;
-      const videoSectionBottom = videoSectionTop + videoSection.offsetHeight;
+        <!-- Special Offer Card -->
+        <div class="container_shop">
+          <div class="card_shop special-offer-card" data-shoe="special-offer">
+            <div class="imgBx">
+              <img src="src/image/COLUMBIA.png" alt="Special Offer">
+            </div>
+            <div class="contentBx">
+              <h2>Limited Edition</h2>
+              <div class="price-display">
+                <span class="current-price">$199.90</span>
+                <span class="original-price">$299.90</span>
+              </div>
+              <div class="size">
+                <h3>Size :</h3>
+                <span data-size="39">39</span>
+                <span data-size="40">40</span>
+                <span data-size="41">41</span>
+                <span data-size="42">42</span>
+                <span data-size="43">43</span>
+              </div>
+              <div class="color">
+                <h3>Color :</h3>
+                <span data-color="gold" style="background: #FFD700" title="Gold"></span>
+                <span data-color="silver" style="background: #C0C0C0" title="Silver"></span>
+                <span data-color="bronze" style="background: #CD7F32" title="Bronze"></span>
+              </div>
+              <a href="#" class="add-to-cart-btn" data-shoe="limited-edition" data-price="199.90">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
 
-      // Calculate scroll progress relative to video section
-      const scrollProgress = Math.max(0, Math.min(1, (scrollY - videoSectionTop) / windowHeight));
+      <!-- Shopping Cart Summary -->
+      <div id="cart-summary"
+        class="fixed bottom-4 right-4 bg-white/90 backdrop-blur-md rounded-2xl shadow-xl border border-amber-200 p-4 hidden z-50">
+        <h3 class="font-bold text-amber-900 mb-2">Shopping Cart</h3>
+        <div id="cart-items" class="space-y-2 mb-3 max-h-32 overflow-y-auto"></div>
+        <div class="border-t pt-2">
+          <div class="flex justify-between items-center">
+            <span class="font-bold">Total:</span>
+            <span id="cart-total" class="font-bold text-amber-600">$0.00</span>
+          </div>
+          <button id="checkout-btn"
+            class="w-full mt-2 bg-amber-500 hover:bg-amber-600 text-white py-2 px-4 rounded-lg transition-colors">
+            Checkout
+          </button>
+          <button id="clear-cart-btn"
+            class="w-full mt-1 bg-gray-500 hover:bg-gray-600 text-white py-1 px-4 rounded-lg text-sm transition-colors">
+            Clear Cart
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
 
-      // Check if we're in or past the video section
-      if (scrollY >= videoSectionTop && scrollY <= videoSectionBottom + windowHeight) {
-        // Calculate scale (from 100% to 40%)
-        const scale = 1 - (scrollProgress * 0.6); // 1 to 0.4 (40%)
-        const finalScale = Math.max(0.4, scale);
+  <!-- Why Choose Us Section -->
+  <section id="why-choose-us" class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-bold mb-6 text-gray-900">ทำไมต้องซื้อกับเรา?</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          เราให้บริการที่ดีที่สุด เพื่อประสบการณ์การช้อปปิ้งที่สมบูรณ์แบบ
+        </p>
+      </div>
 
-        // Apply transformation
-        videoContainer.style.transform = `scale(${finalScale})`;
-        videoContainer.style.transformOrigin = 'center center';
+      <div class="relative">
+        <!-- Services Container -->
+        <div id="services-container" class="overflow-hidden">
+          <div id="services-track" class="flex transition-transform duration-500 ease-in-out">
+            <!-- Service 1: Free Shipping & Store Pickup -->
+            <div class="flex-shrink-0 w-full md:w-1/2 px-4">
+              <div class="flex items-start space-x-6 p-6 rounded-lg hover:bg-gray-50 transition-all duration-300">
+                <div class="flex-shrink-0">
+                  <div class="w-16 h-16 bg-gray-100 rounded-lg flex items-center justify-center">
+                    <i class="ri-truck-line text-2xl text-gray-700"></i>
+                  </div>
+                </div>
+                <div class="flex-1">
+                  <h3 class="text-xl font-bold text-gray-900 mb-2">บริการจัดส่งฟรีและรับสินค้าที่ร้าน</h3>
+                  <p class="text-gray-600 leading-relaxed">
+                    รับสินค้าได้ในร้าน หรือรอรับได้ที่บ้าน ฟรีค่าจัดส่งสำหรับคำสั่งซื้อตั้งแต่ 2,000 บาทขึ้นไป
+                  </p>
+                  <button class="mt-3 text-blue-600 hover:text-blue-800 font-medium flex items-center group">
+                    <span>เรียนรู้เพิ่มเติม</span>
+                    <i class="ri-add-line ml-2 transform group-hover:rotate-45 transition-transform"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
 
-        // Optional: Add some opacity change for better effect
-        const opacity = Math.max(0.8, 1 - (scrollProgress * 0.2));
-        videoContainer.style.opacity = opacity;
+            <!-- Service 2: Expert Consultation -->
+            <div class="flex-shrink-0 w-full md:w-1/2 px-4">
+              <div class="flex items-start space-x-6 p-6 rounded-lg hover:bg-gray-50 transition-all duration-300">
+                <div class="flex-shrink-0">
+                  <div class="w-16 h-16 bg-gray-100 rounded-lg flex items-center justify-center">
+                    <i class="ri-chat-smile-3-line text-2xl text-gray-700"></i>
+                  </div>
+                </div>
+                <div class="flex-1">
+                  <h3 class="text-xl font-bold text-gray-900 mb-2">ช่อปปิ้งแบบตัวต่อตัวกับ Specialist</h3>
+                  <p class="text-gray-600 leading-relaxed">
+                    ให้คำปรึกษาเลือกรองเท้าที่เหมาะสมกับกิจกรรมและรูปเท้าของคุณ พร้อมบริการทดลองใส่ฟรี
+                  </p>
+                  <button class="mt-3 text-blue-600 hover:text-blue-800 font-medium flex items-center group">
+                    <span>เรียนรู้เพิ่มเติม</span>
+                    <i class="ri-add-line ml-2 transform group-hover:rotate-45 transition-transform"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
 
-        // Add border radius when scaled down
-        const borderRadius = scrollProgress * 20;
-        videoContainer.style.borderRadius = `${borderRadius}px`;
-        videoContainer.style.overflow = 'hidden';
+            <!-- Service 3: Quality Guarantee -->
+            <div class="flex-shrink-0 w-full md:w-1/2 px-4">
+              <div class="flex items-start space-x-6 p-6 rounded-lg hover:bg-gray-50 transition-all duration-300">
+                <div class="flex-shrink-0">
+                  <div class="w-16 h-16 bg-gray-100 rounded-lg flex items-center justify-center">
+                    <i class="ri-shield-check-line text-2xl text-gray-700"></i>
+                  </div>
+                </div>
+                <div class="flex-1">
+                  <h3 class="text-xl font-bold text-gray-900 mb-2">รับประกันคุณภาพและความแท้ 100%</h3>
+                  <p class="text-gray-600 leading-relaxed">
+                    สินค้าทุกชิ้นเป็นของแท้ นำเข้าโดยตรงจากผู้ผลิต รับประกัน 2 ปี เปลี่ยนคืนได้ภายใน 30 วัน
+                  </p>
+                  <button class="mt-3 text-blue-600 hover:text-blue-800 font-medium flex items-center group">
+                    <span>เรียนรู้เพิ่มเติม</span>
+                    <i class="ri-add-line ml-2 transform group-hover:rotate-45 transition-transform"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
 
-      } else if (scrollY < videoSectionTop) {
-        // Reset to full size when scrolling back up
-        videoContainer.style.transform = 'scale(1)';
-        videoContainer.style.opacity = '1';
-        videoContainer.style.borderRadius = '0px';
-      }
-    });
+            <!-- Service 4: Secure Shopping -->
+            <div class="flex-shrink-0 w-full md:w-1/2 px-4">
+              <div class="flex items-start space-x-6 p-6 rounded-lg hover:bg-gray-50 transition-all duration-300">
+                <div class="flex-shrink-0">
+                  <div class="w-16 h-16 bg-gray-100 rounded-lg flex items-center justify-center">
+                    <i class="ri-lock-line text-2xl text-gray-700"></i>
+                  </div>
+                </div>
+                <div class="flex-1">
+                  <h3 class="text-xl font-bold text-gray-900 mb-2">ช้อปปิ้งปลอดภัยด้วยระบบชำระเงินที่หลากหลาย</h3>
+                  <p class="text-gray-600 leading-relaxed">
+                    รองรับการชำระเงินหลากหลายช่องทาง บัตรเครดิต โอนเงิน และผ่อน 0% พร้อมระบบรักษาความปลอดภัยระดับสูง
+                  </p>
+                  <button class="mt-3 text-blue-600 hover:text-blue-800 font-medium flex items-center group">
+                    <span>เรียนรู้เพิ่มเติม</span>
+                    <i class="ri-add-line ml-2 transform group-hover:rotate-45 transition-transform"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
 
-    // Pause/play video based on visibility
-    const observerOptions = {
-      threshold: 0.3
-    };
+            <!-- Service 5: Customer Rewards -->
+            <div class="flex-shrink-0 w-full md:w-1/2 px-4">
+              <div class="flex items-start space-x-6 p-6 rounded-lg hover:bg-gray-50 transition-all duration-300">
+                <div class="flex-shrink-0">
+                  <div class="w-16 h-16 bg-gray-100 rounded-lg flex items-center justify-center">
+                    <i class="ri-gift-line text-2xl text-gray-700"></i>
+                  </div>
+                </div>
+                <div class="flex-1">
+                  <h3 class="text-xl font-bold text-gray-900 mb-2">โปรแกรมสะสมแต้มและสิทธิพิเศษ</h3>
+                  <p class="text-gray-600 leading-relaxed">
+                    สะสมแต้มทุกการซื้อ แลกรับส่วนลดและของแถม รับข้อมูลสินค้าใหม่และโปรโมชั่นพิเศษก่อนใคร
+                  </p>
+                  <button class="mt-3 text-blue-600 hover:text-blue-800 font-medium flex items-center group">
+                    <span>เรียนรู้เพิ่มเติม</span>
+                    <i class="ri-add-line ml-2 transform group-hover:rotate-45 transition-transform"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
 
-    const videoObserver = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        const video = entry.target.querySelector('video');
-        if (entry.isIntersecting) {
-          video.play().catch(e => console.log('Video play failed:', e));
-        } else {
-          video.pause();
-        }
-      });
-    }, observerOptions);
+            <!-- Service 6: Expert Care Service -->
+            <div class="flex-shrink-0 w-full md:w-1/2 px-4">
+              <div class="flex items-start space-x-6 p-6 rounded-lg hover:bg-gray-50 transition-all duration-300">
+                <div class="flex-shrink-0">
+                  <div class="w-16 h-16 bg-gray-100 rounded-lg flex items-center justify-center">
+                    <i class="ri-tools-line text-2xl text-gray-700"></i>
+                  </div>
+                </div>
+                <div class="flex-1">
+                  <h3 class="text-xl font-bold text-gray-900 mb-2">บริการดูแลและซ่อมแซมโดยผู้เชี่ยวชาญ</h3>
+                  <p class="text-gray-600 leading-relaxed">
+                    บริการทำความสะอาด ซ่อมแซม และดูแลรักษารองเท้าให้คงความทนทาน พร้อมคำแนะนำการใช้งาน
+                  </p>
+                  <button class="mt-3 text-blue-600 hover:text-blue-800 font-medium flex items-center group">
+                    <span>เรียนรู้เพิ่มเติม</span>
+                    <i class="ri-add-line ml-2 transform group-hover:rotate-45 transition-transform"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
 
-    // Observe the video section
-    const videoSection = document.getElementById('video-section');
-    videoObserver.observe(videoSection);
+            <!-- Service 7: Community & Events -->
+            <div class="flex-shrink-0 w-full md:w-1/2 px-4">
+              <div class="flex items-start space-x-6 p-6 rounded-lg hover:bg-gray-50 transition-all duration-300">
+                <div class="flex-shrink-0">
+                  <div class="w-16 h-16 bg-gray-100 rounded-lg flex items-center justify-center">
+                    <i class="ri-team-line text-2xl text-gray-700"></i>
+                  </div>
+                </div>
+                <div class="flex-1">
+                  <h3 class="text-xl font-bold text-gray-900 mb-2">ชุมชนนักผจญภัยและกิจกรรมพิเศษ</h3>
+                  <p class="text-gray-600 leading-relaxed">
+                    เข้าร่วมชุมชนนักเดินป่า กิจกรรมทดสอบสินค้า การแข่งขัน และทริปเดินป่าพิเศษสำหรับสมาชิก
+                  </p>
+                  <button class="mt-3 text-blue-600 hover:text-blue-800 font-medium flex items-center group">
+                    <span>เรียนรู้เพิ่มเติม</span>
+                    <i class="ri-add-line ml-2 transform group-hover:rotate-45 transition-transform"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-    // Optional: Click to reset video scale
-    document.getElementById('video-container').addEventListener('click', function () {
-      const videoSection = document.getElementById('video-section');
-      videoSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    });
-  </script>
+        <!-- Navigation arrows -->
+        <div class="flex justify-center mt-12 space-x-4">
+          <button id="prev-service" class="w-12 h-12 bg-gray-100 hover:bg-gray-200 rounded-full flex items-center justify-center transition-colors disabled:opacity-50 disabled:cursor-not-allowed">
+            <i class="ri-arrow-left-line text-gray-600"></i>
+          </button>
+          <button id="next-service" class="w-12 h-12 bg-gray-100 hover:bg-gray-200 rounded-full flex items-center justify-center transition-colors disabled:opacity-50 disabled:cursor-not-allowed">
+            <i class="ri-arrow-right-line text-gray-600"></i>
+          </button>
+        </div>
+
+        <!-- Dots indicator -->
+        <div id="dots-container" class="flex justify-center mt-4 space-x-2">
+          <!-- Dots will be generated by JavaScript -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer class="bg-gradient-to-r from-amber-900 via-orange-800 to-amber-900 text-white">
+    <div class="container mx-auto px-4 py-12">
+      <!-- Main Footer Content -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+        <!-- Company Info -->
+        <div>
+          <h3 class="text-2xl font-bold mb-4 text-amber-200">OUTDOOR GEAR</h3>
+          <p class="text-amber-100 mb-4 leading-relaxed">
+            ผู้เชี่ยวชาญด้านรองเท้าเดินป่าและอุปกรณ์กีฬากลางแจ้ง มาพร้อมประสบการณ์กว่า 15 ปี
+          </p>
+          <div class="flex space-x-4">
+            <a href="#" class="text-amber-200 hover:text-white transition-colors text-xl">
+              <i class="ri-facebook-fill"></i>
+            </a>
+            <a href="#" class="text-amber-200 hover:text-white transition-colors text-xl">
+              <i class="ri-instagram-line"></i>
+            </a>
+            <a href="#" class="text-amber-200 hover:text-white transition-colors text-xl">
+              <i class="ri-line-fill"></i>
+            </a>
+            <a href="#" class="text-amber-200 hover:text-white transition-colors text-xl">
+              <i class="ri-youtube-fill"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="text-lg font-semibold mb-4 text-amber-200">เมนูหลัก</h4>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-amber-100 hover:text-white transition-colors">หน้าแรก</a></li>
+            <li><a href="#shop" class="text-amber-100 hover:text-white transition-colors">รองเท้า</a></li>
+            <li><a href="#why-choose-us" class="text-amber-100 hover:text-white transition-colors">ทำไมต้องเรา</a></li>
+            <li><a href="#" class="text-amber-100 hover:text-white transition-colors">เสื้อผ้า</a></li>
+            <li><a href="#" class="text-amber-100 hover:text-white transition-colors">อุปกรณ์</a></li>
+            <li><a href="#" class="text-amber-100 hover:text-white transition-colors">เกี่ยวกับเรา</a></li>
+          </ul>
+        </div>
+
+        <!-- Customer Service -->
+        <div>
+          <h4 class="text-lg font-semibold mb-4 text-amber-200">บริการลูกค้า</h4>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-amber-100 hover:text-white transition-colors">ติดต่อเรา</a></li>
+            <li><a href="#" class="text-amber-100 hover:text-white transition-colors">การจัดส่ง</a></li>
+            <li><a href="#" class="text-amber-100 hover:text-white transition-colors">การคืนสินค้า</a></li>
+            <li><a href="#" class="text-amber-100 hover:text-white transition-colors">คำถามที่พบบ่อย</a></li>
+            <li><a href="#" class="text-amber-100 hover:text-white transition-colors">วิธีการสั่งซื้อ</a></li>
+            <li><a href="#" class="text-amber-100 hover:text-white transition-colors">การรับประกัน</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div>
+          <h4 class="text-lg font-semibold mb-4 text-amber-200">ติดต่อเรา</h4>
+          <div class="space-y-3">
+            <div class="flex items-center space-x-3">
+              <i class="ri-phone-line text-amber-200"></i>
+              <span class="text-amber-100">02-XXX-XXXX</span>
+            </div>
+            <div class="flex items-center space-x-3">
+              <i class="ri-mail-line text-amber-200"></i>
+              <span class="text-amber-100">info@outdoorgear.com</span>
+            </div>
+            <div class="flex items-start space-x-3">
+              <i class="ri-map-pin-line text-amber-200 mt-1"></i>
+              <span class="text-amber-100">1518 ถนน ประชาราษฎร์1 แขวงวงศ์สว่าง<br>เขตบางซื่อ กรุงเทพฯ 10800</span>
+            </div>
+            <div class="flex items-center space-x-3">
+              <i class="ri-time-line text-amber-200"></i>
+              <span class="text-amber-100">เปิด: จ-ส 10:00-21:00<br>อา 10:00-20:00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Payment Methods -->
+      <div class="border-t border-amber-700 pt-8 mb-8">
+        <h4 class="text-lg font-semibold mb-4 text-amber-200 text-center">ช่องทางการชำระเงิน</h4>
+        <div class="flex justify-center items-center space-x-6 flex-wrap gap-4">
+          <div class="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-lg">
+            <span class="text-amber-100 font-medium">Visa</span>
+          </div>
+          <div class="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-lg">
+            <span class="text-amber-100 font-medium">Mastercard</span>
+          </div>
+          <div class="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-lg">
+            <span class="text-amber-100 font-medium">PromptPay</span>
+          </div>
+          <div class="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-lg">
+            <span class="text-amber-100 font-medium">TrueMoney</span>
+          </div>
+          <div class="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-lg">
+            <span class="text-amber-100 font-medium">โอนธนาคาร</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Footer -->
+      <div class="border-t border-amber-700 pt-6">
+        <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+          <p class="text-amber-100 text-sm">
+            &copy; 2025 OUTDOOR GEAR. สงวนลิขสิทธิ์ทั้งหมด.
+          </p>
+          <div class="flex space-x-6 text-sm">
+            <a href="#" class="text-amber-100 hover:text-white transition-colors">นโยบายความเป็นส่วนตัว</a>
+            <a href="#" class="text-amber-100 hover:text-white transition-colors">ข้อกำหนดการใช้งาน</a>
+            <a href="#" class="text-amber-100 hover:text-white transition-colors">คุกกี้</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
 </body>
 
 </html>

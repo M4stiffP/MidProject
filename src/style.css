@@ -123,18 +123,25 @@ body.menu-open {
   margin: -30vh 0 0 -30vw;
 }
 
-/* Mobile responsive for card container */
+@media (min-width: 1200px) and (max-width: 1600px) {
+  #card-container {
+  width: 60vw;
+  height: 60vh;
+  position: absolute;
+  top: 13.75%;
+  left: 50%;
+  margin: -30vh 0 0 -30vw;
+  }
+}
+/* Responsive for mobile screens (phones) */
 @media (max-width: 480px) {
   #card-container {
-    width: 88vw;
-    height: 55vh;
-    margin: -27.5vh 0 0 -44vw;
-  }
-  
-  /* Create space for the product image at top right */
-  #card .text-stone-800 {
-    padding-right: 32%;
-    padding-top: 0;
+    width: 95vw;
+    height: 65vh;
+    top: 10%;
+    left: 50%;
+    margin: -32.5vh 0 0 -47.5vw;
+    position: absolute;
   }
 }
 

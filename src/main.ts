@@ -187,13 +187,13 @@ class ShoppingCart {
     if (shoeType?.includes('bondi8')) {
       switch (colorValue) {
         case 'black':
-          img.src = 'src/image/shoe/HK_Bondi8_Black.png';
+          img.src = 'image/shoe/HK_Bondi8_Black.png';
           break;
         case 'cream':
-          img.src = 'src/image/shoe/HK_Bondi8_Cream.png';
+          img.src = 'image/shoe/HK_Bondi8_Cream.png';
           break;
         case 'cyan':
-          img.src = 'src/image/shoe/HK_Bondi8_Cyan.png';
+          img.src = 'image/shoe/HK_Bondi8_Cyan.png';
           break;
       }
     }

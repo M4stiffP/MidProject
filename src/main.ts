@@ -187,13 +187,41 @@ class ShoppingCart {
     if (shoeType?.includes('bondi8')) {
       switch (colorValue) {
         case 'black':
-          img.src = 'image/shoe/HK_Bondi8_Black.png';
+          img.src = '/image/shoe/HK_Bondi8_Black.png';
           break;
         case 'cream':
-          img.src = 'image/shoe/HK_Bondi8_Cream.png';
+          img.src = '/image/shoe/HK_Bondi8_Cream.png';
           break;
         case 'cyan':
-          img.src = 'image/shoe/HK_Bondi8_Cyan.png';
+          img.src = '/image/shoe/HK_Bondi8_Cyan.png';
+          break;
+      }
+    }
+    // Nike Alphafly 3 color change
+    if (shoeType === 'nike-alphafly3') {
+      switch (colorValue) {
+        case 'blue':
+          img.src = '/image/shoe/Nike_Alphafly3_Blue.png';
+          break;
+        case 'green':
+          img.src = '/image/shoe/Nike_Alphafly3_Green.png';
+          break;
+        case 'orange':
+          img.src = '/image/shoe/Nike_Alphafly3_Orange.png';
+          break;
+      }
+    }
+    // Columbia card color change (optional, add more if needed)
+    if (shoeType === 'columbia') {
+      switch (colorValue) {
+        case 'brown':
+          img.src = '/image/shoe/COLUMBIA.png';
+          break;
+        case 'black':
+          img.src = '/image/shoe/COLUMBIA.png'; // ถ้ามีไฟล์สีดำแยก ให้เปลี่ยน path
+          break;
+        case 'grey':
+          img.src = '/image/shoe/COLUMBIA.png'; // ถ้ามีไฟล์สีเทาแยก ให้เปลี่ยน path
           break;
       }
     }

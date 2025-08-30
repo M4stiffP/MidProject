@@ -184,7 +184,7 @@ class ShoppingCart {
     if (!img || !shoeType) return;
 
     // Update image based on color selection
-    if (shoeType?.includes('bondi8')) {
+    if (shoeType =='bondi8') {
       switch (colorValue) {
         case 'black':
           img.src = '/image/shoe/HK_Bondi8_Black.png';

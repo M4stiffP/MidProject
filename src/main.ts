@@ -129,6 +129,18 @@ class ShoppingCart {
     this.cartSummary = document.getElementById('cart-summary');
     this.cartItems = document.getElementById('cart-items');
     this.cartTotal = document.getElementById('cart-total');
+    
+    // Wait for DOM to be fully loaded before setting up
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', () => {
+        this.initialize();
+      });
+    } else {
+      this.initialize();
+    }
+  }
+
+  private initialize(): void {
     this.setupEventListeners();
     this.updateCartDisplay();
   }
@@ -184,16 +196,36 @@ class ShoppingCart {
     if (!img || !shoeType) return;
 
     // Update image based on color selection
-    if (shoeType =='bondi8') {
+    if (shoeType === 'bondi8') {
       switch (colorValue) {
         case 'black':
-          img.src = '/image/shoe/HK_Bondi8_Black.png';
+          img.src = 'image/shoe/HOKA Bondi8 6490/HK_Bondi8_Black.png';
           break;
         case 'cream':
-          img.src = '/image/shoe/HK_Bondi8_Cream.png';
+          img.src = 'image/shoe/HOKA Bondi8 6490/HK_Bondi8_Cream.png';
           break;
         case 'cyan':
-          img.src = '/image/shoe/HK_Bondi8_Cyan.png';
+          img.src = 'image/shoe/HOKA Bondi8 6490/HK_Bondi8_Cyan.png';
+          break;
+        case 'white':
+          img.src = 'image/shoe/HOKA Bondi8 6490/HK_Bondi8_White.png';
+          break;
+      }
+    }
+    // HOKA Bondi 9 Wide color change
+    if (shoeType === 'bondi9-wide') {
+      switch (colorValue) {
+        case 'black':
+          img.src = 'image/shoe/HOKA Bondi9 Wide 6990/HK_Bondi9Wide_Black.png';
+          break;
+        case 'blue':
+          img.src = 'image/shoe/HOKA Bondi9 Wide 6990/HK_Bondi9Wide_Blue.png';
+          break;
+        case 'cyan':
+          img.src = 'image/shoe/HOKA Bondi9 Wide 6990/HK_Bondi9Wide_Cyan.png';
+          break;
+        case 'gold':
+          img.src = 'image/shoe/HOKA Bondi9 Wide 6990/HK_Bondi9Wide_Gold.png';
           break;
       }
     }
@@ -201,13 +233,149 @@ class ShoppingCart {
     if (shoeType === 'nike-alphafly3') {
       switch (colorValue) {
         case 'blue':
-          img.src = '/image/shoe/Nike_Alphafly3_Blue.png';
+          img.src = 'image/shoe/NIKE Alphafly 3  9400/Nike_Alphafly3_Blue.png';
           break;
         case 'green':
-          img.src = '/image/shoe/Nike_Alphafly3_Green.png';
+          img.src = 'image/shoe/NIKE Alphafly 3  9400/Nike_Alphafly3_Green.png';
           break;
         case 'orange':
-          img.src = '/image/shoe/Nike_Alphafly3_Orange.png';
+          img.src = 'image/shoe/NIKE Alphafly 3  9400/Nike_Alphafly3_Orange.png';
+          break;
+        case 'white':
+          img.src = 'image/shoe/NIKE Alphafly 3  9400/Nike_Alphafly3_White.png';
+          break;
+      }
+    }
+    // NEW BALANCE 327 color change
+    if (shoeType === 'nb327') {
+      switch (colorValue) {
+        case 'black':
+          img.src = 'image/shoe/NEW BALANCE 327  3600/NB_327_Black.png';
+          break;
+        case 'blue':
+          img.src = 'image/shoe/NEW BALANCE 327  3600/NB_327_Blue.png';
+          break;
+        case 'cream':
+          img.src = 'image/shoe/NEW BALANCE 327  3600/NB_327_Cream.png';
+          break;
+        case 'white':
+          img.src = 'image/shoe/NEW BALANCE 327  3600/NB_327_White.png';
+          break;
+      }
+    }
+    // NEW BALANCE 530 color change
+    if (shoeType === 'nb530') {
+      switch (colorValue) {
+        case 'black':
+          img.src = 'image/shoe/NEW BALANCE 530  3900/NB_530_Black.png';
+          break;
+        case 'gray':
+          img.src = 'image/shoe/NEW BALANCE 530  3900/NB_530_Gray.png';
+          break;
+        case 'pink':
+          img.src = 'image/shoe/NEW BALANCE 530  3900/NB_530_Pink.png';
+          break;
+        case 'silver':
+          img.src = 'image/shoe/NEW BALANCE 530  3900/NB_530_Silver.png';
+          break;
+      }
+    }
+    // HOKA Hopara 2 color change
+    if (shoeType === 'hopara2') {
+      switch (colorValue) {
+        case 'black':
+          img.src = 'image/shoe/HOKA Hopara 2  5490/HK_Hopara2_Black.png';
+          break;
+        case 'cream':
+          img.src = 'image/shoe/HOKA Hopara 2  5490/HK_Hopara2_Cream.png';
+          break;
+        case 'gray':
+          img.src = 'image/shoe/HOKA Hopara 2  5490/HK_Hopara2_Gray.png';
+          break;
+        case 'green':
+          img.src = 'image/shoe/HOKA Hopara 2  5490/HK_Hopara2_Green.png';
+          break;
+      }
+    }
+    // NIKE Pegasus 41 color change
+    if (shoeType === 'nike-pegasus41') {
+      switch (colorValue) {
+        case 'black':
+          img.src = 'image/shoe/NIKE Pegasus 41  5200/Nike_Pegasus_Black.png';
+          break;
+        case 'blue':
+          img.src = 'image/shoe/NIKE Pegasus 41  5200/Nike_Pegasus_Blue.png';
+          break;
+        case 'gray':
+          img.src = 'image/shoe/NIKE Pegasus 41  5200/Nike_Pegasus_Gray.png';
+          break;
+        case 'pink':
+          img.src = 'image/shoe/NIKE Pegasus 41  5200/Nike_Pegasus_Pink.png';
+          break;
+      }
+    }
+    // NIKE Vomero 18 color change
+    if (shoeType === 'nike-vomero18') {
+      switch (colorValue) {
+        case 'black':
+          img.src = 'image/shoe/NIKE Vomero 18  5500/Nike_Vomero18_Black.png';
+          break;
+        case 'blue':
+          img.src = 'image/shoe/NIKE Vomero 18  5500/Nike_Vomero18_Blue.png';
+          break;
+        case 'cyan':
+          img.src = 'image/shoe/NIKE Vomero 18  5500/Nike_Vomero18_Cyan.png';
+          break;
+      }
+    }
+    // HOKA Kawana color change
+    if (shoeType === 'kawana') {
+      switch (colorValue) {
+        case 'black':
+          img.src = 'image/shoe/HOKA Kawana  5490/HK_Kawana_Black.png';
+          break;
+        case 'blue':
+          img.src = 'image/shoe/HOKA Kawana  5490/HK_Kawana_Blue.png';
+          break;
+        case 'gray':
+          img.src = 'image/shoe/HOKA Kawana  5490/HK_Kawana_Gray.png';
+          break;
+        case 'white':
+          img.src = 'image/shoe/HOKA Kawana  5490/HK_Kawana_White.png';
+          break;
+      }
+    }
+    // HOKA Mach 6 color change
+    if (shoeType === 'mach6') {
+      switch (colorValue) {
+        case 'cyan':
+          img.src = 'image/shoe/HOKA Mach 6  5990/HK_Mach6_Cyan.png';
+          break;
+        case 'green':
+          img.src = 'image/shoe/HOKA Mach 6  5990/HK_Mach6_Green.png';
+          break;
+        case 'white':
+          img.src = 'image/shoe/HOKA Mach 6  5990/HK_Mach6_White.png';
+          break;
+        case 'yellow':
+          img.src = 'image/shoe/HOKA Mach 6  5990/HK_Mach6_Yellow.png';
+          break;
+      }
+    }
+    // HOKA Rincon 4 Wide color change
+    if (shoeType === 'rincon4-wide') {
+      switch (colorValue) {
+        case 'black':
+          img.src = 'image/shoe/HOKA Rincon 4 Wide 4990/HK_Rincon4_Black.png';
+          break;
+        case 'blue':
+          img.src = 'image/shoe/HOKA Rincon 4 Wide 4990/HK_Rincon4_Blue.png';
+          break;
+        case 'cream':
+          img.src = 'image/shoe/HOKA Rincon 4 Wide 4990/HK_Rincon4_Cream.png';
+          break;
+        case 'white':
+          img.src = 'image/shoe/HOKA Rincon 4 Wide 4990/HK_Rincon4_White.png';
           break;
       }
     }
@@ -215,13 +383,13 @@ class ShoppingCart {
     if (shoeType === 'columbia') {
       switch (colorValue) {
         case 'brown':
-          img.src = '/image/shoe/COLUMBIA.png';
+          img.src = 'image/shoe/COLUMBIA.png';
           break;
         case 'black':
-          img.src = '/image/shoe/COLUMBIA.png'; // ถ้ามีไฟล์สีดำแยก ให้เปลี่ยน path
+          img.src = 'image/shoe/COLUMBIA.png'; // ถ้ามีไฟล์สีดำแยก ให้เปลี่ยน path
           break;
         case 'grey':
-          img.src = '/image/shoe/COLUMBIA.png'; // ถ้ามีไฟล์สีเทาแยก ให้เปลี่ยน path
+          img.src = 'image/shoe/COLUMBIA.png'; // ถ้ามีไฟล์สีเทาแยก ให้เปลี่ยน path
           break;
       }
     }
@@ -235,9 +403,33 @@ class ShoppingCart {
     const priceText = button.getAttribute('data-price') || '0';
     const price = parseFloat(priceText);
     
-    // Get selected size and color
-    const selectedSize = card.querySelector('.size span.selected')?.textContent || '40';
-    const selectedColor = card.querySelector('.color span.selected')?.getAttribute('data-color') || 'default';
+    // Get selected size and color, with defaults if none selected
+    let selectedSize = card.querySelector('.size span.selected')?.textContent;
+    let selectedColor = card.querySelector('.color span.selected')?.getAttribute('data-color');
+    
+    // Set defaults if nothing is selected
+    if (!selectedSize) {
+      const firstSizeElement = card.querySelector('.size span[data-size]');
+      if (firstSizeElement) {
+        firstSizeElement.classList.add('selected');
+        selectedSize = firstSizeElement.textContent || '40';
+      } else {
+        selectedSize = '40';
+      }
+    }
+    
+    if (!selectedColor) {
+      const firstColorElement = card.querySelector('.color span[data-color]');
+      if (firstColorElement) {
+        firstColorElement.classList.add('selected');
+        selectedColor = firstColorElement.getAttribute('data-color') || 'default';
+        // Update image when auto-selecting color
+        this.updateShoeImage(firstColorElement as HTMLElement);
+      } else {
+        selectedColor = 'default';
+      }
+    }
+    
     const shoeImage = card.querySelector('.imgBx img')?.getAttribute('src') || '';
 
     // Create unique ID for cart item
@@ -266,20 +458,27 @@ class ShoppingCart {
 
   private showAddedToCartFeedback(button: HTMLElement): void {
     const originalText = button.textContent;
-    button.textContent = '✓ Added!';
+    button.textContent = '✓ เพิ่มแล้ว!';
     button.style.background = '#10b981';
+    button.style.color = '#ffffff';
     
     setTimeout(() => {
       button.textContent = originalText;
       button.style.background = '';
+      button.style.color = '';
     }, 1500);
   }
 
   private updateCartDisplay(): void {
     if (!this.cartItems || !this.cartTotal || !this.cartSummary) return;
 
-    // Clear current items
+    // Clear current items and remove old event listeners
     this.cartItems.innerHTML = '';
+    
+    // Remove existing event listeners to prevent duplication
+    const newCartItems = this.cartItems.cloneNode(true) as HTMLElement;
+    this.cartItems.parentNode?.replaceChild(newCartItems, this.cartItems);
+    this.cartItems = newCartItems;
 
     if (this.items.length === 0) {
       this.cartSummary.classList.add('hidden');
@@ -300,10 +499,15 @@ class ShoppingCart {
       itemElement.className = 'cart-item';
       itemElement.innerHTML = `
         <div class="item-name">${item.name}</div>
-        <div class="item-details">Size: ${item.size}, Color: ${item.color}</div>
-        <div class="flex justify-between items-center mt-1">
-          <span class="item-price">$${item.price.toFixed(2)} x ${item.quantity}</span>
-          <button class="remove-item text-red-500 hover:text-red-700" data-id="${item.id}">×</button>
+        <div class="item-details">ไซส์: ${item.size}, สี: ${item.color}</div>
+        <div class="flex justify-between items-center mt-2">
+          <span class="item-price">฿${item.price.toLocaleString()}</span>
+          <div class="quantity-controls flex items-center gap-2">
+            <button class="decrease-qty bg-gray-200 hover:bg-gray-300 w-6 h-6 rounded-full text-sm" data-id="${item.id}">-</button>
+            <span class="quantity font-bold">${item.quantity}</span>
+            <button class="increase-qty bg-amber-200 hover:bg-amber-300 w-6 h-6 rounded-full text-sm" data-id="${item.id}">+</button>
+            <button class="remove-item text-red-500 hover:text-red-700 text-lg font-bold ml-2" data-id="${item.id}">×</button>
+          </div>
         </div>
       `;
       
@@ -313,14 +517,19 @@ class ShoppingCart {
     });
 
     // Update total
-    this.cartTotal.textContent = `$${total.toFixed(2)}`;
+    this.cartTotal.textContent = `฿${total.toLocaleString()}`;
 
-    // Add remove item functionality
+    // Add single event listener for cart item interactions
     this.cartItems.addEventListener('click', (e: Event) => {
       const target = e.target as HTMLElement;
+      const itemId = target.getAttribute('data-id');
+      
       if (target.classList.contains('remove-item')) {
-        const itemId = target.getAttribute('data-id');
         this.removeItem(itemId);
+      } else if (target.classList.contains('increase-qty')) {
+        this.changeQuantity(itemId, 1);
+      } else if (target.classList.contains('decrease-qty')) {
+        this.changeQuantity(itemId, -1);
       }
     });
   }
@@ -332,23 +541,73 @@ class ShoppingCart {
     this.updateCartDisplay();
   }
 
+  private changeQuantity(itemId: string | null, change: number): void {
+    if (!itemId) return;
+    
+    const item = this.items.find(item => item.id === itemId);
+    if (!item) return;
+    
+    item.quantity += change;
+    
+    // Remove item if quantity becomes 0 or less
+    if (item.quantity <= 0) {
+      this.removeItem(itemId);
+      return;
+    }
+    
+    // Limit maximum quantity to 99
+    if (item.quantity > 99) {
+      item.quantity = 99;
+    }
+    
+    this.updateCartDisplay();
+  }
+
   private checkout(): void {
     if (this.items.length === 0) {
-      alert('Your cart is empty!');
+      alert('ตะกร้าของคุณว่างเปล่า!');
       return;
     }
 
-    const total = this.items.reduce((sum, item) => sum + (item.price * item.quantity), 0);
-    const itemCount = this.items.reduce((sum, item) => sum + item.quantity, 0);
-    
-    alert(`Thank you for your purchase!\n\nItems: ${itemCount}\nTotal: $${total.toFixed(2)}\n\nYour order will be processed shortly.`);
-    
-    this.clearCart();
+    try {
+      const total = this.items.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+      const itemCount = this.items.reduce((sum, item) => sum + item.quantity, 0);
+      
+      // Create order summary
+      let orderSummary = 'รายการสั่งซื้อ:\n\n';
+      this.items.forEach(item => {
+        orderSummary += `${item.name} (ไซส์: ${item.size}, สี: ${item.color})\n`;
+        orderSummary += `จำนวน: ${item.quantity} x ฿${item.price.toLocaleString()} = ฿${(item.price * item.quantity).toLocaleString()}\n\n`;
+      });
+      
+      const confirmed = confirm(`${orderSummary}จำนวนสินค้า: ${itemCount} ชิ้น\nยอดรวม: ฿${total.toLocaleString()}\n\nต้องการสั่งซื้อสินค้าเหล่านี้ใช่หรือไม่?`);
+      
+      if (confirmed) {
+        alert(`ขอบคุณสำหรับการสั่งซื้อ!\n\nจำนวนสินค้า: ${itemCount} ชิ้น\nยอดรวม: ฿${total.toLocaleString()}\n\nคำสั่งซื้อของคุณจะได้รับการดำเนินการในไม่ช้า`);
+        this.clearCart();
+      }
+    } catch (error) {
+      console.error('Error during checkout:', error);
+      alert('เกิดข้อผิดพลาดในระหว่างการสั่งซื้อ กรุณาลองใหม่อีกครั้ง');
+    }
   }
 
   private clearCart(): void {
     this.items = [];
     this.updateCartDisplay();
+    
+    // Show feedback that cart was cleared
+    const clearBtn = document.getElementById('clear-cart-btn');
+    if (clearBtn) {
+      const originalText = clearBtn.textContent;
+      clearBtn.textContent = '✓ ล้างแล้ว!';
+      clearBtn.style.background = '#10b981';
+      
+      setTimeout(() => {
+        clearBtn.textContent = originalText;
+        clearBtn.style.background = '';
+      }, 1500);
+    }
   }
 }
 

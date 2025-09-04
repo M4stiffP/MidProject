@@ -616,29 +616,15 @@ document.addEventListener('DOMContentLoaded', () => {
   new ShoppingCart();
 });
 
-// Smooth scrolling to shop section
+// Handle navigation to why-choose-us section
 document.addEventListener('click', (e: Event) => {
   const target = e.target as HTMLElement;
-  
-  // Handle navigation to shop section
-  if (target.textContent?.includes('Shoes') || target.classList.contains('btn-shopnow')) {
-    e.preventDefault();
-    const shopSection = document.getElementById('shop');
-    shopSection?.scrollIntoView({ behavior: 'smooth' });
-  }
 
   // Handle navigation to why-choose-us section
   if (target.textContent?.includes('Why Us') || target.getAttribute('href') === '#why-choose-us') {
     e.preventDefault();
     const whyChooseUsSection = document.getElementById('why-choose-us');
     whyChooseUsSection?.scrollIntoView({ behavior: 'smooth' });
-  }
-
-  // Handle "ดูสินค้าทั้งหมด" button
-  if (target.textContent?.includes('ดูสินค้าทั้งหมด')) {
-    e.preventDefault();
-    const shopSection = document.getElementById('shop');
-    shopSection?.scrollIntoView({ behavior: 'smooth' });
   }
 });
 

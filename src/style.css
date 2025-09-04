@@ -123,12 +123,12 @@ body.menu-open {
   margin: -30vh 0 0 -30vw;
 }
 
-@media (min-width: 1200px) and (max-width: 1600px) {
+@media (min-width: 1200px) and (max-width: 1800px) {
   #card-container {
   width: 60vw;
   height: 60vh;
   position: absolute;
-  top: 13.75%;
+  top: 20%;
   left: 50%;
   margin: -30vh 0 0 -30vw;
   }
@@ -279,37 +279,13 @@ body.menu-open {
   }
 }
 
-.features {
-  display: flex;
-  gap: 0.8em;
-  flex-wrap: wrap;
-  margin: 1em 0;
-}
 
-.feature-tag {
-  background: rgba(67, 233, 123, 0.2);
-  color: #43e97b;
-  padding: 0.4em 0.8em;
-  border-radius: 1em;
-  font-size: 0.9em;
-  font-weight: 500;
-  border: 1px solid rgba(67, 233, 123, 0.3);
-  backdrop-filter: blur(4px);
-  font-family: 'Poppins', sans-serif;
-}
 
 .price-section {
   display: flex;
   align-items: center;
   gap: 1em;
   margin: 1.5em 0;
-}
-
-.original-price {
-  font-size: 1.1em;
-  color: #78716c; /* stone-500 */
-  text-decoration: line-through;
-  font-family: 'Poppins', sans-serif;
 }
 
 .sale-price {
@@ -446,11 +422,6 @@ body.menu-open {
   z-index: 10;
 }
 
-/* Ensure content appears above video when scrolled */
-body {
-  position: relative;
-}
-
 /* Make sure the card content has higher z-index */
 #card-container {
   z-index: 60;
@@ -461,72 +432,7 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Mobile responsive for general text sizes */
-@media (max-width: 480px) {
-  .text-5xl {
-    font-size: 1.6rem !important;
-  }
-  
-  .text-4xl {
-    font-size: 1.3rem !important;
-  }
-  
-  .text-3xl {
-    font-size: 1.1rem !important;
-  }
-  
-  .text-2xl {
-    font-size: 0.95rem !important;
-  }
-  
-  .text-xl {
-    font-size: 0.8rem !important;
-  }
-  
-  .text-lg {
-    font-size: 0.75rem !important;
-  }
-}
 
-/* Mobile responsive for spacing */
-@media (max-width: 480px) {
-  .space-y-6 > * + * {
-    margin-top: 0.5rem !important;
-  }
-  
-  .space-y-4 > * + * {
-    margin-top: 0.3rem !important;
-  }
-  
-  .space-y-8 > * + * {
-    margin-top: 0.6rem !important;
-  }
-  
-  .gap-8 {
-    gap: 0.6rem !important;
-  }
-  
-  .p-6 {
-    padding: 0.5rem !important;
-  }
-  
-  .mb-6 {
-    margin-bottom: 0.5rem !important;
-  }
-  
-  .mb-8 {
-    margin-bottom: 0.6rem !important;
-  }
-  
-  .mb-12 {
-    margin-bottom: 1rem !important;
-  }
-  
-  .container {
-    padding-left: 0.8rem !important;
-    padding-right: 0.8rem !important;
-  }
-}
 
 /* Shop Section Styles */
 #shop {
@@ -683,20 +589,6 @@ html {
     opacity: 1;
     visibility: visible;
     transform: translateY(0px);
-}
-
-.current-price {
-    font-size: 1.4em;
-    font-weight: bold;
-    color: #4ade80;
-    margin-right: 10px;
-}
-
-.original-price {
-    font-size: 1em;
-    color: #fff;
-    text-decoration: line-through;
-    opacity: 0.7;
 }
 
 .container_shop .card_shop .contentBx .size,
@@ -1052,4 +944,70 @@ html {
         font-size: 0.85em;
         padding: 8px 12px;
     }
+}
+
+/* Mobile responsive for general layout */
+@media (max-width: 480px) {
+  /* Text size adjustments */
+  .text-5xl {
+    font-size: 1.6rem !important;
+  }
+  
+  .text-4xl {
+    font-size: 1.3rem !important;
+  }
+  
+  .text-3xl {
+    font-size: 1.1rem !important;
+  }
+  
+  .text-2xl {
+    font-size: 0.95rem !important;
+  }
+  
+  .text-xl {
+    font-size: 0.8rem !important;
+  }
+  
+  .text-lg {
+    font-size: 0.75rem !important;
+  }
+  
+  /* Spacing adjustments */
+  .space-y-6 > * + * {
+    margin-top: 0.5rem !important;
+  }
+  
+  .space-y-4 > * + * {
+    margin-top: 0.3rem !important;
+  }
+  
+  .space-y-8 > * + * {
+    margin-top: 0.6rem !important;
+  }
+  
+  .gap-8 {
+    gap: 0.6rem !important;
+  }
+  
+  .p-6 {
+    padding: 0.5rem !important;
+  }
+  
+  .mb-6 {
+    margin-bottom: 0.5rem !important;
+  }
+  
+  .mb-8 {
+    margin-bottom: 0.6rem !important;
+  }
+  
+  .mb-12 {
+    margin-bottom: 1rem !important;
+  }
+  
+  .container {
+    padding-left: 0.8rem !important;
+    padding-right: 0.8rem !important;
+  }
 }

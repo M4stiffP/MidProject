@@ -118,17 +118,19 @@ body.menu-open {
   width: 60vw;
   height: 60vh;
   position: absolute;
-  top: 19.5%;
+  top: 90%;
   left: 50%;
   margin: -30vh 0 0 -30vw;
+  z-index: 60;
 }
+
 
 @media (min-width: 1200px) and (max-width: 1800px) {
   #card-container {
   width: 60vw;
   height: 60vh;
   position: absolute;
-  top: 20%;
+  top: 90%;
   left: 50%;
   margin: -30vh 0 0 -30vw;
   }
@@ -138,7 +140,7 @@ body.menu-open {
   #card-container {
     width: 95vw;
     height: 65vh;
-    top: 10%;
+    top: 90%;
     left: 50%;
     margin: -32.5vh 0 0 -47.5vw;
     position: absolute;
@@ -420,11 +422,6 @@ body.menu-open {
 #video-section {
   position: relative;
   z-index: 10;
-}
-
-/* Make sure the card content has higher z-index */
-#card-container {
-  z-index: 60;
 }
 
 /* Smooth scrolling */

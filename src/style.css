@@ -290,6 +290,21 @@ body.menu-open {
   margin: 1.5em 0;
 }
 
+.original-price {
+  font-size: 1.1em;
+  color: #78716c; /* stone-500 */
+  text-decoration: line-through;
+  font-family: 'Poppins', sans-serif;
+}
+
+.current-price {
+  font-size: 1.4em;
+  font-weight: bold;
+  color: #4ade80;
+  margin-right: 10px;
+  font-family: 'Poppins', sans-serif;
+}
+
 .sale-price {
   font-size: 1.8em;
   color: #d97706; /* amber-600 */
@@ -586,6 +601,20 @@ html {
     opacity: 1;
     visibility: visible;
     transform: translateY(0px);
+}
+
+.container_shop .current-price {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #4ade80;
+    margin-right: 10px;
+}
+
+.container_shop .original-price {
+    font-size: 1em;
+    color: #fff;
+    text-decoration: line-through;
+    opacity: 0.7;
 }
 
 .container_shop .card_shop .contentBx .size,
